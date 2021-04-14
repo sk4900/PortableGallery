@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starry night</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .screen{
+        display: block;
+        position: relative;
+        border-color: white;
+        border-width: 10px;
+        border-radius: 50px;
+        border-style: solid;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        height: 900px;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: absolute;
+        top: 30%;
+    }
+
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+        cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .prev{
+        left:0;
+    }
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .down{
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    padding: 16px;
+    color:white;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 3px 3px 3px 3px;
+    user-select: none;
+    -webkit-user-select: none;
+
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover,
+    .down:hover{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+        opacity: 0.6;
+        max-width: fit-content;
+        max-height: 100px;
+    }
+
+    .image{
+    width: 100%;
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 350px;
+    }
+
+    .back-button{
+        cursor: pointer;
+        background-image: url("images/back.png");
+        background-size: auto;
+        position:absolute;
+        top: 10px;
+        left: 10px;
+        width: 36px;
+        height: 36px;
+        border-radius: 20px;
+    }
+
+    .home-button{
+        cursor: pointer;
+        background-image: url("images/home.png");
+        background-size: auto;
+        position:absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 36px;
+        height: 36px;
+        border-radius: 20px;
+    }
+</style>
+<body>
+<div class="screen">
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+
+            <img class="image" src="images/sunflower.jpg">
+            <button class="back-button" title= "previous image" onclick="location.href = 'Main Viewing page starrynight.html'"></button>
+            <a class="prev" title = "Skip" HREF="Main Viewing page cafe.html">&#10094;</a>
+            <a class= "next" title = "Add to Collection" HREF="Main Viewing page cafe.html">&#10095;</a>
+            <a class="down" title= "Piece Info" onclick="down" >&#812;</a>
+
+            <button class="home-button" title = "home" onclick="location.href = 'RegistrationLogin.html'"></button>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

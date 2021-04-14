@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .screen{
+        display: block;
+        position: relative;
+        border-color: white;
+        border-width: 10px;
+        border-radius: 50px;
+        border-style: solid;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        height: 900px;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: absolute;
+        top: 5%;
+    }
+    .back-button{
+        cursor: pointer;
+        background-size: auto;
+        position:absolute;
+        left: 20px;
+        top: 10px;
+    }
+    .profile-picture{
+        position: absolute;
+        top: 10px;
+        left: 250px;
+    }
+    figcaption{
+        color: white;
+        font-style: normal;
+        text-align: center;
+    }
+    .btn-container{
+        background-color: grey;
+        color: white;
+        position: relative;
+        top: 250px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .btn{
+        cursor: pointer;
+        padding-left: 99px;
+        padding-right: 98px;
+        background-color: #222222;
+        border: 3px white;
+        color: white;
+    }
+    .img-container{
+        position: absolute;
+        left: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 300px;
+        background-color: grey;
+        top: 320px;
+
+    }
+    .edit{
+        cursor: pointer;
+    }
+
+
+</style>
+<body>
+    <div class="screen">
+        <div class="container">
+            <button class="back-button" title= "previous page" onclick="location.href = 'Main Viewing page starrynight.html'"><</button>
+            <figure class="profile-picture">
+                <a href="EditProfilePage.html" class="edit" title="Edit Profile"><img width = 150px height = 150px src='images/testprofile1.jpg'/></a>
+                <figcaption>Vincent Van Gogh</figcaption>
+            </figure>
+            <div class="btn-container">
+                <button class="btn" onclick="location.href = 'AddImagePage.html'" title="Add Image">+</button>
+                <button class="btn" title="Saved Images">Saved</button>
+            </div>
+            <div class="img-container">
+                <a href="Main%20Viewing%20page%20cafe.html"><img width=150px height=150px src="images/cafe.jpg"/></a>
+                <a href="Main%20Viewing%20page%20starrynight.html"><img width=150px height=150px src="the-starry-night-photo-u4.jpg"/></a>
+                <a href="Main%20Viewing%20page%20sunflower.html"><img width=150px height=150px src="images/sunflower.jpg"/></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

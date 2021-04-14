@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile Page</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .screen{
+        display: block;
+        position: relative;
+        border-color: white;
+        border-width: 10px;
+        border-radius: 50px;
+        border-style: solid;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        height: 900px;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: absolute;
+        top: 5%;
+        color: white;
+    }
+    .back-button{
+        cursor: pointer;
+        background-size: auto;
+        position:absolute;
+        left: 20px;
+        top: 10px;
+    }
+    .save-button{
+        cursor: pointer;
+        background-size: auto;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    figcaption{
+        color: white;
+        font-style: normal;
+        text-align: center;
+    }
+    .img-container{
+        position: relative;
+        left: 5px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 300px;
+        background-color: grey;
+        top: 320px;
+
+    }
+    .img{
+        cursor: pointer;
+    }
+    .form{
+        position: absolute;
+        padding-top: 30px;
+        right: 75px;
+    }
+
+
+</style>
+<body>
+    <div class="screen">
+        <div class="container">
+            <button class="back-button" title= "previous page" onclick="location.href = 'ProfilePage.html'"><</button>
+            <list class="form">
+                <li><label>Profile Picture:</label> <button>Choose File</button></li>
+                <li><label>Name:</label> <input value="Vincent Van Gogh"/></li>
+                <li><label>Email:</label> <input value="example@email.com"/></li>
+                <li><label>Password:</label> <input value="**********"/></li>
+                <li><label>Date of Birth:</label> <input value="MM/DD/YYYY"/></li>
+            </list>
+            <button class="save-button" title="Save" onclick="location.href = 'ProfilePage.html'">Save</button>
+            <div class="img-container">
+                <img class="img" width=150px height=150px title="Delete" src="images/cafe.jpg"/>
+                <img class="img" width=150px height=150px title="Delete" src="the-starry-night-photo-u4.jpg"/>
+                <img class="img" width=150px height=150px title="Delete" src="images/sunflower.jpg"/>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
