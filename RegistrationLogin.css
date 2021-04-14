@@ -1,11 +1,13 @@
 
 h1 {
     text-align: center;
-    font-family: Arial, sans-serif
+    font-family: Arial, sans-serif;
+    color: white;
 }
 h2 {
     text-align: center;
-    font-family: Arial, sans-serif
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
 .Trending{
@@ -31,7 +33,7 @@ h2 {
 
 }
 body {
-    background: white;
+    background: black;
 }
 
 .form-popup {
