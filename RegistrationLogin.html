@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <style>
   .content {
-    max-width: 500px;
-    margin: auto;
+    display: block;
+    position: relative;
+    border-color: white;
+    border-width: 10px;
+    border-radius: 50px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 1000px;
+    text-align: center;
   }
 </style>
 <div class="content">
@@ -24,17 +33,17 @@
 <div class="Trending">
   <div class="numbertext"></div>
   <img src="images/the-starry-night-photo-u4.jpg" alt="Main Image" width="400"
-       height="500" class="img">
+       height="700" class="img">
 </div>
 <div class="Trending">
   <div class="numbertext"></div>
   <img src="images/africa.jpg" alt="Main Image" width="400"
-       height="500" class="img">
+       height="700" class="img">
 </div>
 <div class="Trending">
   <div class="numbertext"></div>
   <img src="images/art3.jpg" alt="Main Image" width="400"
-       height="500" class="img">
+       height="700" class="img">
 </div>
     </th>
     <th>
@@ -60,13 +69,15 @@
     <th>
       <input type="text" class="search" placeholder="Search for a piece" name="searchbar" id="search" size="50">
     </th>
-    <th></th>
+    <th>
+      <button class="home-button" id="home"></button>
+    </th>
   </tr>
 </table>
 
 </body>
 </div>
-
+</div>
 <div class="form-popup" id="myForm">
   <form onsubmit="goHome()" class="form-container">
     <h1>Login</h1>
@@ -129,4 +140,5 @@
     slides[slideIndex-1].style.display = "block";
   }
 </script>
+
 </html>

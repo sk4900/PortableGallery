@@ -21,4 +21,5 @@ function goHome() {
     document.getElementById("login").style.display = "none";
     document.getElementById("register").style.display = "none";
     document.getElementById("search").style.display = "block";
+    document.getElementById("home").style.visibility= "visible";
 }
