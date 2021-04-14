@@ -2,9 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Add Image</title>
 </head>
+<style>
+    body{
+        background-color: black;
+    }
+    .screen{
+        display: block;
+        position: relative;
+        border-color: white;
+        border-width: 10px;
+        border-radius: 50px;
+        border-style: solid;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        height: 900px;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: absolute;
+        top: 5%;
+        color: white;
+    }
+    .back-button{
+        cursor: pointer;
+        background-size: auto;
+        position:absolute;
+        left: 20px;
+        top: 10px;
+    }
+    .save-button{
+        cursor: pointer;
+        background-size: auto;
+        position: relative;
+        right: 20px;
+        top: 10px;
+    }
+    figcaption{
+        color: white;
+        font-style: normal;
+        text-align: center;
+    }
+    .img-container{
+        position: relative;
+        left: 5px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 300px;
+        background-color: grey;
+        top: 320px;
+
+    }
+    .img{
+        cursor: pointer;
+    }
+    .form{
+        position: relative;
+        padding-top: 30px;
+        left: 75px;
+    }
+
+
+</style>
 <body>
+    <div class="screen">
+        <div class="container">
+            <button class="back-button" title= "previous page" onclick="location.href = 'ProfilePage.html'">Cancel</button>
+            <list class="form">
+                <li><label>Image File:</label> <button>Choose File</button></li>
+                <li><label>Type of Image:</label> </li>
+                <li><input type="checkbox">Commissioned Piece</input> </li>
+                <li><input type="checkbox">Subscribed Piece</input> </li>
+                <li><input type="checkbox">None</input> </li>
+                <li><label>Caption:</label> <input/></li>
+            </list>
+            <button class="save-button" title="Save" onclick="location.href = 'ProfilePage.html'">Add</button>
+
+        </div>
+    </div>
 
 </body>
 </html>
