@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<style>
+  .content {
+    max-width: 500px;
+    margin: auto;
+  }
+</style>
+<div class="content">
+<head>
+  <link rel=stylesheet href="RegistrationLogin.css">
+  <script src = "RegistrationLogin.js"> </script>
+  <h1>Portable Gallery</h1>
+  <h2>Trending</h2>
+</head>
+<body>
+<button type="button" class="btn btn--left" onclick="leftImage()">&#8592</button>
+
+<div class="Trending">
+  <div class="numbertext"></div>
+  <img src="the-starry-night-photo-u4.jpg" alt="Main Image" width="400"
+       height="500" class="img">
+</div>
+
+<div class="Trending">
+  <div class="numbertext"></div>
+  <img src="africa.jpg" alt="Main Image" width="400"
+       height="500" class="img" >
+</div>
+
+<div class="Trending">
+  <div class="numbertext"></div>
+  <img src="images/cafe.jpg" style="width:100%">
+</div>
+
+<button  type="button" class="btn btn--right" onclick="plusSlides(1)">&#8594</button>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+<br>
+<button type="button" class="btn register" id="register" onclick="openRegistration()">Register </button>
+<br>
+<button type="button" class="btn login" id="login" onclick="openForm()" >Login</button>
+</body>
+</div>
+
+<div class="form-popup" id="myForm">
+  <form onsubmit="goHome()" class="form-container">
+    <h1>Login</h1>
+
+    <label><b>Username</b></label>
+    <br>
+    <input type="text" placeholder="Enter Username" name="username" required>
+    <br>
+    <label><b>Password</b></label>
+    <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn confirm" onclick="goHome()">Login </button>
+    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<div class="form-popup" id="RegistrationForm">
+  <form class="form-container">
+    <h1>Register</h1>
+
+    <label><b>Email</b></label>
+    <br>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label><b>Username</b></label>
+    <br>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label><b>Password</b></label>
+    <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label><b>Confirm Password</b></label>
+    <br>
+    <input type="password" placeholder="Confirm Password" name="cpsw" required>
+    <br>
+    <label><b>Date of Birth</b></label>
+    <br>
+    <input type="date" placeholder="Enter DOB" name="DOB" required>
+    <button type="submit" class="btn confirm" onclick="closeRegistration()">Confirm Registration </button>
+    <button type="submit" class="btn cancel" onclick="closeRegistration()">Close</button>
+  </form>
+</div>
+</html>
