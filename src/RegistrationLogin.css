@@ -95,3 +95,7 @@ body {
     height: 36px;
     border-radius: 20px;
 }
+
+.Go {
+    display: none;
+}

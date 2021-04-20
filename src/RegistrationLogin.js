@@ -22,4 +22,5 @@ function goHome() {
     document.getElementById("register").style.display = "none";
     document.getElementById("search").style.display = "block";
     document.getElementById("home").style.visibility= "visible";
+    document.getElementById("Go").style.display= "block";
 }
