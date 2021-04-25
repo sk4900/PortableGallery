@@ -1,6 +1,6 @@
 # PortableGallery
 Application uses basic html, javascript, and css.  <br />
-Currently the only way to view pages its by using localhost in an IDE like WebStorm  <br />
+https://sk4900.github.io/PortableGallery/src/RegistrationLogin.html  <br />
 Our pages our complete for each of the 5 user tasks, while lacking some navigation between the pages.  <br />
 RegistrationLogin.html is the Login/Register Task  <br />
 Main Viewing Page.html are the pages for the Art Viewing Task <br />
