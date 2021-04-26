@@ -130,6 +130,62 @@
         height: 36px;
         border-radius: 20px;
     }
+
+    .rate-button {
+        cursor: pointer;
+        background-image: url("images/ratingsmodified.png");
+        background-size: auto;
+        position:absolute;
+        top: 10px;
+        right: 10px;
+        width: 36px;
+        height: 36px;
+        border-radius: 20px;
+    }
+
+    .rate {
+        position:absolute;
+        top: 50px;
+       left: 100px;
+        display: none;
+        background: #222222;
+        border-color: white;
+        border-width: 5px;
+        border-style: solid;
+    }
+
+    .rate:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+    }
+    .rate:not(:checked) > label {
+        float:right;
+        width:1em;
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:45px;
+        color:#ccc;
+    }
+    .rate:not(:checked) > label:before {
+        content: '★ ';
+    }
+    .rate > input:checked ~ label {
+        color: #ffc700;
+    }
+    .rate:not(:checked) > label:hover,
+    .rate:not(:checked) > label:hover ~ label {
+        color: #deb217;
+
+    }
+    .rate > input:checked + label:hover,
+    .rate > input:checked + label:hover ~ label,
+    .rate > input:checked ~ label:hover,
+    .rate > input:checked ~ label:hover ~ label,
+    .rate > label:hover ~ input:checked ~ label {
+        color: #c59b08;
+
+    }
 </style>
 <body>
 <div class="screen">
@@ -141,13 +197,35 @@
             <button class="back-button" title= "previous image" onclick="location.href = 'MainViewingPageUpdated.html'"></button>
             <a class="prev" title = "Skip" HREF="Main Viewing page sunflower.html">&#10094;</a>
             <a class= "next" title = "Add to Collection" HREF="Main Viewing page sunflower.html">&#10095;</a>
-            <a class="down" title= "Piece Info" onclick="down" >&#812;</a>
+            <a class="down" title= "Piece Info" HREF="Comment Section starrynight.html" >&#812;</a>
 
             <button class="home-button" title = "home" onclick="location.href = 'HomePage.html'"></button>
+
+            <button class ="rate-button" tile = "rater" onclick = openRating()></button>
+
+            <div class="rate" id = ratings>
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+                <button class= "submit-rating"  onclick="closeRating()">Submit</button>
+                <button class= "cancel-rating" onclick="closeRating()">Cancel</button>
+            </div>
     </div>
 </div>
 <script>
-
+    function openRating() {
+        document.getElementById("ratings").style.display = "block";
+    }
+    function closeRating() {
+        document.getElementById("ratings").style.display = "none";
+    }
 </script>
 </body>
 </html>
