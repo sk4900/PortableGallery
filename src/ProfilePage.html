@@ -32,6 +32,10 @@
         top: 5%;
     }
     .back-button{
+        background-color: black;
+        color: white;
+        border-color: white;
+        border-radius: 5px;
         cursor: pointer;
         background-size: auto;
         position:absolute;
@@ -76,6 +80,15 @@
 
     }
     .edit{
+    }
+    .ebtn{
+        position: relative;
+        bottom: 150px;
+        left: 70px;
+        background-color: blue;
+        color: white;
+        border-color: white;
+        border-radius: 5px;
         cursor: pointer;
     }
 
@@ -86,7 +99,8 @@
         <div class="container">
             <button class="back-button" title= "previous page" onclick="location.href = 'HomePage.html'"><</button>
             <figure class="profile-picture">
-                <a href="EditProfilePage.html" class="edit" title="Edit Profile"><img width = 150px height = 150px src='images/testprofile1.jpg'/></a>
+                <img class='edit' width = 150px height = 150px src='images/testprofile1.jpg'/>
+                <button onclick="location.href = 'EditProfilePage.html'" class="ebtn">Edit</button>
                 <figcaption>Vincent Van Gogh</figcaption>
             </figure>
             <div class="btn-container">
