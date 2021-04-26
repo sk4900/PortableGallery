@@ -70,7 +70,7 @@
       <input type="search" class="search" placeholder="Search for a piece" name="searchbar" id="search" size="50">
     </th>
     <th>
-      <button type="submit" id="Go" class="Go" onclick="location.href = 'MainViewingPageUpdated.html">Go</button>
+      <button type="submit" id="Go" class="Go" onclick="location.href = 'MainViewingPageUpdated.html'">Go</button>
     </th>
     <th>
       <button class="home-button" onclick="location.href = 'ProfilePage.html'" id="home"></button>
@@ -79,10 +79,8 @@
 </table>
 
 </body>
-</div>
-</div>
 <div class="form-popup" id="myForm">
-  <form onsubmit="goHome()" class="form-container">
+  <form class="form-container">
     <h1>Login</h1>
     <label><b>Username</b></label>
     <br>
@@ -91,8 +89,7 @@
     <label><b>Password</b></label>
     <br>
     <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn confirm" onclick="goHome()">Login </button>
+    <button type="submit" class="btn confirm" onclick="location.href = 'HomePage.html'">Login </button>
     <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
@@ -119,7 +116,7 @@
     <label><b>Date of Birth</b></label>
     <br>
     <input type="date" placeholder="Enter DOB" name="DOB" required>
-    <button type="submit" class="btn confirm" onclick="closeRegistration()">Confirm Registration </button>
+    <button type="submit" class="btn confirm" onclick="confirmRegistration()">Confirm Registration </button>
     <button type="submit" class="btn cancel" onclick="closeRegistration()">Close</button>
   </form>
 </div>
@@ -142,5 +139,5 @@
     slides[slideIndex-1].style.display = "block";
   }
 </script>
-
+</div>
 </html>
