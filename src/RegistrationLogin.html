@@ -80,7 +80,7 @@
 
 </body>
 <div class="form-popup" id="myForm">
-  <form class="form-container">
+  <div class="form-container">
     <h1>Login</h1>
     <label><b>Username</b></label>
     <br>
@@ -91,10 +91,11 @@
     <input type="password" placeholder="Enter Password" name="psw" required>
     <button type="submit" class="btn confirm" onclick="location.href = 'HomePage.html'">Login </button>
     <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
+  </div>
 </div>
+
 <div class="form-popup" id="RegistrationForm">
-  <form class="form-container">
+  <div class="form-container">
     <h1>Register</h1>
 
     <label><b>Email</b></label>
@@ -116,9 +117,9 @@
     <label><b>Date of Birth</b></label>
     <br>
     <input type="date" placeholder="Enter DOB" name="DOB" required>
-    <button type="submit" class="btn confirm" onclick="confirmRegistration()">Confirm Registration </button>
+    <button type="submit" class="btn confirm" onclick="closeRegistration()">Confirm Registration </button>
     <button type="submit" class="btn cancel" onclick="closeRegistration()">Close</button>
-  </form>
+  </div>
 </div>
 <script>
   var slideIndex = 1;

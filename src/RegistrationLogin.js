@@ -9,9 +9,6 @@ function openRegistration() {
 function closeRegistration() {
     document.getElementById("RegistrationForm").style.display = "none";
 }
-function confirmRegistration() {
-    document.getElementById("register").style.display = "none";
-}
 
     function closeForm() {
     document.getElementById("myForm").style.display = "none";
